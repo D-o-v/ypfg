@@ -1,14 +1,13 @@
-import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-
+import Features from "../components/Features"
+import Hero from "../components/Hero"
+import OurBlog from "../components/OurBlog"
 
 const Landing = () => {
   return (
-    <div className='landing-page'>
-        <Header/>
-        <div className="main h-[200vh] bg-blue-100"></div>
-        <Footer/>
+    <div className=" min-h-screen  ">
+      <Hero/>
+     <Features/>
+     <OurBlog/>
     </div>
   )
 }

@@ -1,17 +1,8 @@
-import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Landing from './pages/Landing'
-BrowserRouter
+import AllRoutes from './Routes.tsx/AllRoutes'
 
 function App() {
-
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Landing/>} />
-      </Routes>
-    </BrowserRouter>
+    <AllRoutes/>
   )
 }
-
 export default App

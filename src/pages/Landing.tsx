@@ -1,6 +1,7 @@
 import Features from "../components/Features"
 import Hero from "../components/Hero"
 import OurBlog from "../components/OurBlog"
+import Testimonial from "../components/Testimonial"
 
 const Landing = () => {
   return (
@@ -8,6 +9,7 @@ const Landing = () => {
       <Hero/>
      <Features/>
      <OurBlog/>
+     <Testimonial/>
     </div>
   )
 }

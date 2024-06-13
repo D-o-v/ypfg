@@ -32,6 +32,7 @@ const Features = () => {
                     <img src={finacialFreedomPicture} alt="Financial Freedom Picture" className='rounded-xl h-full w-full shadow-2xl' />
                 </div>
             </div>
+            
         </div>
     );
 }

@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className="navbar bg-base-100 fixed shadow-lg">
+    <div className="navbar bg-base-100 fixed shadow-lg stay-above">
       <div className="navbar-start ">
         <img src='/logo1.svg' width='300px' height='200px' alt='' className='hidden lg:flex' />
 

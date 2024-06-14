@@ -1,5 +1,6 @@
 import Features from "../components/Features"
 import Hero from "../components/Hero"
+import NewsLetterSignUp from "../components/NewsLetterSignUp"
 import OurBlog from "../components/OurBlog"
 import Testimonial from "../components/Testimonial"
 
@@ -10,6 +11,7 @@ const Landing = () => {
      <Features/>
      <OurBlog/>
      <Testimonial/>
+     <NewsLetterSignUp/>
     </div>
   )
 }

@@ -8,11 +8,11 @@ const Testimonial = () => {
             <p className='font-bold text-start text-xl lg:text-3xl mb-3 text-balance'>Don’t just take our word for it</p>
             <p>Hear from some of our amazing customers who are building faster.</p>
 
-            <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-4  lg:gap-10 lg:mb-7 mt-10">
-                {[...Array(3)].map((_, idx) => (
+            <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-4  lg:gap-10 lg:mb-7 mt-10 carousel px-2 pt-10  ">
+                {[...Array(16)].map((_, idx) => (
                     <div
                         key={idx}
-                        className="group flex flex-col justify-start items-start gap-2 w-fit my-7 h-fit duration-500 relative rounded-lg px-4 py-10 bg-gray-900 hover:-translate-y-2 hover:shadow-xl shadow-gray-800"
+                        className="carousel-item lg:w-1/5 group flex flex-col justify-start items-start gap-2 w-fit my-7 h-fit duration-500 relative rounded-lg px-4 py-10 bg-gray-900 hover:-translate-y-2 hover:shadow-xl shadow-gray-800"
                     >
                         <img src={avatar} alt="budgetting image" className="rounded-full absolute duration-700 shadow-md group-hover:-translate-y-4 group-hover:-translate-x-4 -top-10 left-10 w-[100px] h-[100px] bg-gray-800" />
                         <div className="flex flex-col gap-2 mt-3 text-pretty">
@@ -30,7 +30,6 @@ const Testimonial = () => {
                     </div>
 
                 ))}
-
 
 
             </div>

@@ -1,27 +1,33 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
+import logo from '../assets/logo.svg'
 
 const Header = () => {
+  const navigate =useNavigate()
   return (
     <div className="navbar bg-base-100 fixed shadow-lg stay-above">
       <div className="navbar-start ">
-        <img src='/logo1.svg' width='300px' height='200px' alt='' className='hidden lg:flex' />
+        <img src={logo} width='300px' height='200px' alt='' className='hidden lg:flex' onClick={()=>navigate("/")}/>
 
         <div className="dropdown lg:hidden">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
           </div>
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Homepage</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>About</a></li>
+
+            <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/blogs'>Blogs</NavLink></li>
+        <li><NavLink to='/courses'>Courses</NavLink></li>
+        <li><NavLink to='/resources'>Resources</NavLink></li>
+        <li><NavLink to='/community'>Community</NavLink></li>
           </ul>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex text-[#344054] gap-[32px] font-[600] text-[16px]">
-        <NavLink to='#'>Home</NavLink>
-        <NavLink to='#'>Blog</NavLink>
-        <NavLink to='#'>About me </NavLink>
-        <NavLink to='#'>Contact </NavLink>
+        <NavLink to='/'>Home</NavLink>
+        <NavLink to='/blogs'>Blogs</NavLink>
+        <NavLink to='/courses'>Courses</NavLink>
+        <NavLink to='/resources'>Resources</NavLink>
+        <NavLink to='/community'>Community</NavLink>
       </div>
       <div className="navbar-center flex lg:hidden ">
         <img src='/logo1.svg' width='200px' height='200px' alt='' />

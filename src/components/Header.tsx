@@ -1,12 +1,11 @@
 import { NavLink, useNavigate } from 'react-router-dom'
-import logo from '../assets/logo.svg'
 
 const Header = () => {
   const navigate =useNavigate()
   return (
     <div className="navbar bg-base-100 fixed shadow-lg stay-above">
       <div className="navbar-start ">
-        <img src={logo} width='300px' height='200px' alt='' className='hidden lg:flex' onClick={()=>navigate("/")}/>
+        <img src='/logo1.svg' width='300px' height='200px' alt='' className='hidden lg:flex' onClick={()=>navigate("/")}/>
 
         <div className="dropdown lg:hidden">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">

@@ -1,7 +1,7 @@
 import Features from "../components/Features"
 import Hero from "../components/Hero"
 import NewsLetterSignUp from "../components/NewsLetterSignUp"
-import OurBlog from "../components/OurBlog"
+import LandinPageBlog from "../components/LandinPageBlog"
 import Testimonial from "../components/Testimonial"
 
 const Landing = () => {
@@ -9,7 +9,7 @@ const Landing = () => {
     <div className=" min-h-screen  ">
       <Hero/>
      <Features/>
-     <OurBlog/>
+     <LandinPageBlog/>
      <Testimonial/>
      <NewsLetterSignUp/>
     </div>

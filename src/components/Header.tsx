@@ -21,13 +21,15 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <div className="navbar-center hidden lg:flex text-[#344054] gap-[32px] font-[600] text-[16px]">
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/blogs'>Blogs</NavLink>
-        <NavLink to='/courses'>Courses</NavLink>
-        <NavLink to='/resources'>Resources</NavLink>
-        <NavLink to='/community'>Community</NavLink>
-      </div>
+
+      <ul  tabIndex={0} className=" menu lg:menu-horizontal navbar-center hidden lg:flex text-[#344054] gap-[32px] font-[600] text-[16px]">
+      <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/blogs'>Blogs</NavLink></li>
+        <li><NavLink to='/courses'>Courses</NavLink></li>
+        <li><NavLink to='/resources'>Resources</NavLink></li>
+        <li><NavLink to='/community'>Community</NavLink></li>
+      </ul>
+
       <div className="navbar-center flex lg:hidden ">
         <img src='/logo1.svg' width='200px' height='200px' alt='' />
 

@@ -42,7 +42,7 @@ const Blog = ({ blog }: BlogProps) => {
     return (
         <div className="card max-w-90 bg-base-100 shadow-xl">
             <figure className="px-5 pt-5 lg:px-10 lg:pt-10">
-                <img src={budgettingImage} alt="budgeting image" className="rounded-xl" />
+                <img src={budgettingImage} alt="budgeting image" className="rounded-xl h-[230px] w-[400px]" />
             </figure>
             <div className="card-body items-center text-center">
                 <p className="text-wrap text-start self-start font-medium">{blog.date}</p>

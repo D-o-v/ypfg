@@ -95,7 +95,7 @@ const Blogs = () => {
                 <div className="min-h-screen p-4 lg:p-10 w-full bg-slate-100">
                     <div className="hero-content text-center">
                         <div className="max-w-xl">
-                            <h1 className="text-5xl font-bold">Resources and insights</h1>
+                            <h1 className="text-5xl font-bold">Resources and Insights</h1>
                             <p className="py-6">The latest industry news, interviews, technologies, and resources.</p>
                             <form>
                                 <label className="input input-bordered flex items-center gap-2">
